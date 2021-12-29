@@ -2,4 +2,4 @@
 
 ## Documentation
 
-* [Loupedeck Plugin Development Guide](https://developer.loupedeck.com)
+* [Loupedeck Plugin Development Guide](https://github.com/Loupedeck/LoupedeckPluginSdk4/wiki)
