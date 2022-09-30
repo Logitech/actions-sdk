@@ -4,7 +4,7 @@ Here you can find an introduction to Loupedeck plugin SDK, example plugin source
 
 ## Documentation
 
-* [Loupedeck Plugin Development Guide](https://github.com/Loupedeck/LoupedeckPluginSdk4/wiki)
+* [Loupedeck Plugin Development Guide](https://github.com/Loupedeck/LoupedeckPluginSdk/wiki)
 
 ## Developer Discord
 
@@ -12,7 +12,7 @@ Here you can find an introduction to Loupedeck plugin SDK, example plugin source
 
 ## Discussion
 
-* [Loupedeck Plugin Development Discussion Forum](https://github.com/Loupedeck/LoupedeckPluginSdk4/discussions)
+* [Loupedeck Plugin Development Discussion Forum](https://github.com/Loupedeck/LoupedeckPluginSdk/discussions)
 
 ## Developer Newsletter
 
