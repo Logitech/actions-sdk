@@ -13,3 +13,7 @@ Here you can find an introduction to Loupedeck plugin SDK, example plugin source
 ## Discussion
 
 * [Loupedeck Plugin Development Discussion Forum](https://github.com/Loupedeck/LoupedeckPluginSdk4/discussions)
+
+## Developer Newsletter
+
+* [Sign up to developer newsletter](https://loupedeck.com/developer/#newsletter)
