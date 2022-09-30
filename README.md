@@ -16,4 +16,4 @@ Here you can find an introduction to Loupedeck plugin SDK, example plugin source
 
 ## Developer Newsletter
 
-* [Sign up to developer newsletter](https://loupedeck.com/developer/#newsletter)
+* [Sign Up To Developer Newsletter](https://loupedeck.com/developer/#newsletter)
