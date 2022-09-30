@@ -1,4 +1,4 @@
-# Welcome to Loupedeck Plugin SDK, version 4
+# Welcome to Loupedeck Plugin SDK
 
 Here you can find an introduction to Loupedeck plugin SDK, example plugin source code, step-by-step tutorial and the SDK documentation and related discussion forum. 
 
