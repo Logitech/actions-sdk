@@ -59,7 +59,9 @@
     <Compile Include="ToggleMuteCommand.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PluginConfiguration.json" />
+    <None Include="metadata\LoupedeckPackage.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
