@@ -8,4 +8,8 @@
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files %28x86%29\Loupedeck\Loupedeck2\Loupedeck2.exe</StartProgram>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>/Applications/Loupedeck.app</StartProgram>
+  </PropertyGroup>
 </Project>
