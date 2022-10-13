@@ -2,9 +2,10 @@
 {
     using System;
 
-    class ToggleMuteCommand : PluginDynamicCommand
+    public class ToggleMuteCommand : PluginDynamicCommand
     {
-        public ToggleMuteCommand() : base("Toggle Mute", "Toggles audio mute state", "Audio")
+        public ToggleMuteCommand()
+            : base(displayName: "Toggle Mute", description: "Toggles audio mute state", groupName: "Audio")
         {
         }
 
