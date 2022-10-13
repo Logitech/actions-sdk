@@ -4,27 +4,13 @@ namespace Loupedeck.DemoPlugin
 
     public class DemoPlugin : Plugin
     {
+        // This method is called when the plugin is loaded during the Loupedeck service start-up.
         public override void Load()
         {
         }
 
+        // This method is called when the plugin is unloaded during the Loupedeck service shutdown.
         public override void Unload()
-        {
-        }
-
-        private void OnApplicationStarted(Object sender, EventArgs e)
-        {
-        }
-
-        private void OnApplicationStopped(Object sender, EventArgs e)
-        {
-        }
-
-        public override void RunCommand(String commandName, String parameter)
-        {
-        }
-
-        public override void ApplyAdjustment(String adjustmentName, String parameter, Int32 diff)
         {
         }
     }
