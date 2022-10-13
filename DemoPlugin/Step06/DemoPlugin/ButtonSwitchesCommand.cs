@@ -2,7 +2,7 @@
 {
     using System;
 
-    class ButtonSwitchesCommand : PluginDynamicCommand
+    public class ButtonSwitchesCommand : PluginDynamicCommand
     {
         private readonly Boolean[] _switches = new Boolean[12];
 
@@ -10,10 +10,10 @@
         {
             for (var i = 0; i < 12; i++)
             {
-                // parameter is the switch index
+                // Parameter is the switch index
                 var actionParameter = i.ToString();
 
-                // add parameter
+                // Add parameter
                 this.AddParameter(actionParameter, $"Switch {i}", "Switches");
             }
         }
@@ -22,10 +22,10 @@
         {
             if (Int32.TryParse(actionParameter, out var i))
             {
-                // turn the switch
+                // Turn the switch
                 this._switches[i] = !this._switches[i];
 
-                // inform Loupedeck that command display name and/or image has changed
+                // Inform Loupedeck that command display name and/or image has changed
                 this.ActionImageChanged(actionParameter);
             }
         }
