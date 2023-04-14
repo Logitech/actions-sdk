@@ -21,6 +21,7 @@
         {
             this._counter += diff; // Increase or decrease the counter by the number of ticks.
             this.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
+            PluginLog.Info($"Counter value was changed by {diff} ticks");
         }
 
         // This method is called when the reset command related to the adjustment is executed.
@@ -28,6 +29,7 @@
         {
             this._counter = 0; // Reset the counter.
             this.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
+            PluginLog.Info("Counter was reset");
         }
 
         // Returns the adjustment value that is shown next to the dial.
