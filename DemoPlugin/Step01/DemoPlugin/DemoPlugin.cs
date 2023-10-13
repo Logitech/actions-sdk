@@ -4,10 +4,10 @@ namespace Loupedeck.DemoPlugin
 
     public class DemoPlugin : Plugin
     {
-        // Gets a value indicating whether this is an Universal plugin or an Application plugin.
+        // Gets a value indicating whether this is an API-only plugin.
         public override Boolean UsesApplicationApiOnly => true;
 
-        // Gets a value indicating whether this is an API-only plugin.
+        // Gets a value indicating whether this is a Universal plugin or an Application plugin.
         public override Boolean HasNoApplication => true;
 
         // This method is called when the plugin is loaded during the Loupedeck service start-up.
