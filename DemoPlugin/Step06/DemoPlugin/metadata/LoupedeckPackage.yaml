@@ -21,7 +21,10 @@ version: 1.0
 author: Loupedeck
 
 # Copyright information.
-copyright: Copyright © 2022 Loupedeck Ltd. All rights reserved.
+copyright: Copyright © 2023 Loupedeck Ltd. All rights reserved.
+
+# Minimum Loupedeck version supported by the plugin.
+minimumLoupedeckVersion: 5.7
 
 
 # ==================================================================================================
