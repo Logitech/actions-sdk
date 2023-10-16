@@ -54,6 +54,7 @@
     <Compile Include="ButtonSwitchesCommand.cs" />
     <Compile Include="CounterAdjustment.cs" />
     <Compile Include="PluginLog.cs" />
+    <Compile Include="PluginResources.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DemoApplication.cs" />
     <Compile Include="DemoPlugin.cs" />
@@ -66,16 +67,7 @@
     <None Include="metadata\LoupedeckPackage.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="metadata\Icon16x16.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="metadata\Icon256x256.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="metadata\Icon32x32.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="metadata\Icon48x48.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
