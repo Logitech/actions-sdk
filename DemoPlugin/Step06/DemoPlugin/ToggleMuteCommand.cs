@@ -5,7 +5,7 @@
     public class ToggleMuteCommand : PluginDynamicCommand
     {
         public ToggleMuteCommand()
-            : base(displayName: "Toggle Mute", description: "Toggles audio mute state", groupName: "Audio")
+            : base(displayName: "Toggle Mute", description: "Mutes and unmutes system volume", groupName: "Audio")
         {
         }
 

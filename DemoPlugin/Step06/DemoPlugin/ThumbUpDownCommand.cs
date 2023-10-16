@@ -4,7 +4,7 @@
 
     public class ThumbUpDownCommand : PluginDynamicCommand
     {
-        private Boolean _toggleState = false;
+        private Boolean _isThumbDown = false;
 
         private readonly String _imageResourcePathThumbUp;
         private readonly String _imageResourcePathThumbDown;
@@ -17,13 +17,13 @@
 
         protected override void RunCommand(String actionParameter)
         {
-            this._toggleState = !this._toggleState;
+            this._isThumbDown = !this._isThumbDown;
             this.ActionImageChanged();
         }
 
         protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
         {
-            var resourcePath = this._toggleState ? this._imageResourcePathThumbDown : this._imageResourcePathThumbUp;
+            var resourcePath = this._isThumbDown ? this._imageResourcePathThumbDown : this._imageResourcePathThumbUp;
             return EmbeddedResources.ReadImage(resourcePath);
         }
     }
