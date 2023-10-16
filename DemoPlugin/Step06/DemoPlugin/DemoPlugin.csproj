@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButtonSwitchesCommand.cs" />
-    <Compile Include="CounterAdjustment.cs" />
     <Compile Include="PluginLog.cs" />
     <Compile Include="PluginResources.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
