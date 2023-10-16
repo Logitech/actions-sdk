@@ -59,6 +59,7 @@
     <Compile Include="DemoApplication.cs" />
     <Compile Include="DemoPlugin.cs" />
     <Compile Include="ToggleMuteCommand.cs" />
+    <Compile Include="ThumbUpDownCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,6 +68,8 @@
     <None Include="metadata\LoupedeckPackage.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <EmbeddedResource Include="images\ThumbDown.png" />
+    <EmbeddedResource Include="images\ThumbUp.png" />
     <Content Include="metadata\Icon256x256.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
