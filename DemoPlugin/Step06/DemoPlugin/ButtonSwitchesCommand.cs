@@ -4,11 +4,12 @@
 
     public class ButtonSwitchesCommand : PluginDynamicCommand
     {
-        private readonly Boolean[] _switches = new Boolean[12];
+        private const int NumberOfSwitches = 4;
+        private readonly Boolean[] _switches = new Boolean[NumberOfSwitches];
 
         public ButtonSwitchesCommand() : base()
         {
-            for (var i = 0; i < 12; i++)
+            for (var i = 0; i < NumberOfSwitches; i++)
             {
                 // Parameter is the switch index
                 var actionParameter = i.ToString();
