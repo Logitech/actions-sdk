@@ -20,12 +20,12 @@ namespace Loupedeck.DemoPlugin
             PluginResources.Init(this.Assembly);
         }
 
-        // This method is called when the plugin is loaded during the Loupedeck service start-up.
+        // This method is called when the plugin is loaded.
         public override void Load()
         {
         }
 
-        // This method is called when the plugin is unloaded during the Loupedeck service shutdown.
+        // This method is called when the plugin is unloaded.
         public override void Unload()
         {
         }

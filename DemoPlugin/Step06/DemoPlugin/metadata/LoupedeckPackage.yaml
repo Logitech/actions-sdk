@@ -5,11 +5,14 @@
 # Package type. Must be plugin4 for plugins.
 type: plugin4
 
-# Name of the plugin.
+# Name that identifies the plugin.
 name: Demo
 
-# Name that is displayed in the Loupedeck configuration application.
+# Plugin name that is shown to the user.
 displayName: Demo
+
+# Short description of the plugin.
+description: This is a demo plugin
 
 # Name of the plugin library file.
 pluginFileName: DemoPlugin.dll
@@ -18,13 +21,13 @@ pluginFileName: DemoPlugin.dll
 version: 1.0
 
 # Author of the plugin. The author can be a company or an individual developer.
-author: Loupedeck
+author: Logitech Europe SA
 
 # Copyright information.
-copyright: Copyright © 2023 Loupedeck Ltd. All rights reserved.
+copyright: Copyright © 2024 Logitech Europe SA. All rights reserved.
 
-# Minimum Loupedeck version supported by the plugin.
-minimumLoupedeckVersion: 5.7
+# Minimum SDK version supported by the plugin.
+minimumLoupedeckVersion: 6.0
 
 
 # ==================================================================================================
@@ -39,7 +42,8 @@ pluginFolderWin: .
 # This parameter is required to support Mac.
 pluginFolderMac: .
 
-# List of supported devices.
+# List of devices the plugin is optimized for.
 supportedDevices:
-    # LoupedeckCtFamily covers the following devices: Loupedeck CT, Live and Live S, and Razer Stream Controller.
+    # LoupedeckCtFamily covers the following devices: Loupedeck CT, Live and Live S,
+    # Razer Stream Controller, and Razer Stream Controller X.
     - LoupedeckCtFamily
