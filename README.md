@@ -1,19 +1,12 @@
-# Welcome to Loupedeck Plugin SDK
+# Welcome to Logi Actions SDK
 
-Here you can find an introduction to Loupedeck plugin SDK, example plugin source code, step-by-step tutorial and the SDK documentation and related discussion forum. 
+Here you can find an introduction to Logi Actions SDK, example plugin source code and the SDK documentation. 
 
 ## Documentation
 
-* [Loupedeck Plugin Development Guide](https://loupedeck.github.io/)
+* [Logi Actions SDK Developer Docs](https://logitech.github.io/actions-sdk-docs)
 
 ## Developer Discord
 
-* [Loupedeck Developer Discord](https://discord.gg/etJCPZytHg)
+* [Logi Developer Discord](https://discord.gg/etJCPZytHg)
 
-## Discussion
-
-* [Loupedeck Plugin Development Discussion Forum](https://github.com/Loupedeck/PluginSdk/discussions)
-
-## Developer Newsletter
-
-* [Sign Up To Developer Newsletter](https://loupedeck.com/developer/#newsletter)
