@@ -1,29 +1,31 @@
-﻿namespace Loupedeck.DemoPlugin
-{
-    using System;
+﻿using System;
 
+namespace Loupedeck.DemoPlugin
+{
     public class ThumbUpDownCommand : PluginDynamicCommand
     {
-        private Boolean _isThumbDown = false;
+        private bool isThumbsDown = false;
+        private readonly string imageResourcePathThumbUp;
+        private readonly string imageResourcePathThumbDown;
 
-        private readonly String _imageResourcePathThumbUp;
-        private readonly String _imageResourcePathThumbDown;
-
-        public ThumbUpDownCommand() : base(displayName: "Thumb up/down", description: null, groupName: "Switches")
+        public ThumbUpDownCommand() : base(
+            displayName: "Thumb up/down",
+            description: null,
+            groupName: "Switches")
         {
-            this._imageResourcePathThumbUp = EmbeddedResources.FindFile("ThumbUp.png");
-            this._imageResourcePathThumbDown = EmbeddedResources.FindFile("ThumbDown.png");
+            this.imageResourcePathThumbUp = EmbeddedResources.FindFile("ThumbUp.png");
+            this.imageResourcePathThumbDown = EmbeddedResources.FindFile("ThumbDown.png");
         }
 
-        protected override void RunCommand(String actionParameter)
+        protected override void RunCommand(string actionParameter)
         {
-            this._isThumbDown = !this._isThumbDown;
-            this.ActionImageChanged();
+            this.isThumbsDown = !isThumbsDown;
+            base.ActionImageChanged();
         }
 
-        protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
+        protected override BitmapImage GetCommandImage(string actionParameter, PluginImageSize imageSize)
         {
-            var resourcePath = this._isThumbDown ? this._imageResourcePathThumbDown : this._imageResourcePathThumbUp;
+            var resourcePath = isThumbsDown ? imageResourcePathThumbDown : imageResourcePathThumbUp;
             return EmbeddedResources.ReadImage(resourcePath);
         }
     }
