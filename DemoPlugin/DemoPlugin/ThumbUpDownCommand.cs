@@ -11,8 +11,8 @@
 
         public ThumbUpDownCommand() : base(displayName: "Thumb up/down", description: null, groupName: "Switches")
         {
-            this._imageResourcePathThumbUp = EmbeddedResources.FindFile("ThumbUp.png");
-            this._imageResourcePathThumbDown = EmbeddedResources.FindFile("ThumbDown.png");
+            this._imageResourcePathThumbUp = PluginResources.FindFile("ThumbUp.png");
+            this._imageResourcePathThumbDown = PluginResources.FindFile("ThumbDown.png");
         }
 
         protected override void RunCommand(String actionParameter)
@@ -24,7 +24,7 @@
         protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
         {
             var resourcePath = this._isThumbDown ? this._imageResourcePathThumbDown : this._imageResourcePathThumbUp;
-            return EmbeddedResources.ReadImage(resourcePath);
+            return PluginResources.ReadImage(resourcePath);
         }
     }
 }

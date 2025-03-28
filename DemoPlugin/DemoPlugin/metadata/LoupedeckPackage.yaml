@@ -24,7 +24,7 @@ version: 1.0
 author: Logitech Europe SA
 
 # Copyright information.
-copyright: Copyright © 2024 Logitech Europe SA. All rights reserved.
+copyright: Copyright © 2025 Logitech Europe SA. All rights reserved.
 
 # Minimum SDK version supported by the plugin.
 minimumLoupedeckVersion: 6.0
@@ -36,14 +36,18 @@ minimumLoupedeckVersion: 6.0
 
 # Location of plugin files on Windows (relative to the plugin base directory).
 # This parameter is required to support Windows.
-pluginFolderWin: .
+pluginFolderWin: bin
 
 # Location of plugin files on macOS (relative to the plugin base directory).
 # This parameter is required to support Mac.
-pluginFolderMac: .
+pluginFolderMac: bin
 
 # List of devices the plugin is optimized for.
 supportedDevices:
     # LoupedeckCtFamily covers the following devices: Loupedeck CT, Live and Live S,
     # Razer Stream Controller, and Razer Stream Controller X.
     - LoupedeckCtFamily
+
+    # Logitech MX Creative Console family devices.
+    - LoupedeckExtendedFamily
+
