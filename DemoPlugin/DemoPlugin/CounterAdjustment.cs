@@ -1,13 +1,12 @@
-﻿namespace Loupedeck.DemoPlugin
+﻿using System;
+
+namespace Loupedeck.DemoPlugin
 {
-    using System;
-
     // This class implements an example adjustment that counts the rotation ticks of a dial.
-
     public class CounterAdjustment : PluginDynamicAdjustment
     {
         // This variable holds the current value of the counter.
-        private Int32 _counter = 0;
+        private int counter = 0;
 
         // Initializes the adjustment class.
         // When `hasReset` is set to true, a reset command is automatically created for this adjustment.
@@ -17,22 +16,22 @@
         }
 
         // This method is called when the dial associated to the plugin is rotated.
-        protected override void ApplyAdjustment(String actionParameter, Int32 diff)
+        protected override void ApplyAdjustment(string actionParameter, int diff)
         {
-            this._counter += diff; // Increase or decrease the counter by the number of ticks.
-            this.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
+            counter += diff; // Increase or decrease the counter by the number of ticks.
+            base.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
             PluginLog.Info($"Counter value was changed by {diff} ticks");
         }
 
         // This method is called when the reset command related to the adjustment is executed.
-        protected override void RunCommand(String actionParameter)
+        protected override void RunCommand(string actionParameter)
         {
-            this._counter = 0; // Reset the counter.
-            this.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
+            this.counter = 0; // Reset the counter.
+            base.AdjustmentValueChanged(); // Notify the Loupedeck service that the adjustment value has changed.
             PluginLog.Info("Counter was reset");
         }
 
         // Returns the adjustment value that is shown next to the dial.
-        protected override String GetAdjustmentValue(String actionParameter) => this._counter.ToString();
+        protected override string GetAdjustmentValue(string actionParameter) => counter.ToString();
     }
 }

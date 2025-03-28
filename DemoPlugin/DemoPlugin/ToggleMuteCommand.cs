@@ -1,17 +1,20 @@
-﻿namespace Loupedeck.DemoPlugin
-{
-    using System;
+﻿using System;
 
+namespace Loupedeck.DemoPlugin
+{
     public class ToggleMuteCommand : PluginDynamicCommand
     {
         public ToggleMuteCommand()
-            : base(displayName: "Toggle Mute", description: "Mutes and unmutes system volume", groupName: "Audio")
+            : base(
+                  displayName: "Toggle Mute", 
+                  description: "Mutes and unmutes system volume", 
+                  groupName: "Audio")
         {
         }
 
-        protected override void RunCommand(String actionParameter)
+        protected override void RunCommand(string actionParameter)
         {
-            this.Plugin.ClientApplication.SendKeyboardShortcut(VirtualKeyCode.VolumeMute);
+            base.Plugin.ClientApplication.SendKeyboardShortcut(VirtualKeyCode.VolumeMute);
         }
     }
 }
