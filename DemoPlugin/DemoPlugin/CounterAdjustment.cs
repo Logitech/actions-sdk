@@ -11,11 +11,7 @@ namespace Loupedeck.DemoPlugin
         // Initializes the adjustment class.
         // When `hasReset` is set to true, a reset command is automatically created for this adjustment.
         public CounterAdjustment()
-            : base(
-                  displayName: "Counter", 
-                  description: "Counts rotation ticks",
-                  groupName: "Adjustments",
-                  hasReset: true)
+            : base(displayName: "Counter", description: "Counts rotation ticks", groupName: "Adjustments", hasReset: true)
         {
         }
 

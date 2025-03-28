@@ -33,7 +33,7 @@ namespace Loupedeck.DemoPlugin
 
         protected override string GetCommandDisplayName(string actionParameter, PluginImageSize imageSize)
         {
-            if (int.TryParse(actionParameter, out int i))
+            if (int.TryParse(actionParameter, out var i))
             {
                 return $"Switch {i}: {switches[i]}";
             }
