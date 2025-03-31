@@ -17,6 +17,8 @@
 
     <PluginDir Condition="$(OS) == 'Windows_NT'">$(LocalAppData)\Logi\LogiPluginService\Plugins\</PluginDir>
     <PluginDir Condition="$(OS) != 'Windows_NT'">~/Library/Application\ Support/Logi/LogiPluginService/Plugins/</PluginDir>
+
+    <OutputPath>$(BaseOutputPath)$(Configuration)\bin\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,22 +38,23 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Condition="$(OS) == 'Windows_NT'" Command="echo $(OutputPath) &gt; &quot;$(PluginDir)$(ProjectName).link&quot;" />
-    <Exec Condition="$(OS) != 'Windows_NT'" Command="echo $(OutputPath) &gt; $(PluginDir)$(ProjectName).link" />
+    <Exec Condition="$(OS) == 'Windows_NT'" Command="echo $(BaseOutputPath)$(Configuration)\ &gt; &quot;$(PluginDir)$(ProjectName).link&quot;&#xD;&#xA;start loupedeck:plugin/Demo/reload" />
+    <Exec Condition="$(OS) != 'Windows_NT'" Command="echo $(BaseOutputPath)$(Configuration)\ &gt; $(PluginDir)$(ProjectName).link" />
   </Target>
 
   <Target Name="CopyMetadata" AfterTargets="PostBuildEvent">
     <ItemGroup>
       <MetadataFiles Include="metadata\*.*" />
     </ItemGroup>
-    <Copy SourceFiles="@(MetadataFiles)" DestinationFolder="$(OutputPath)metadata" />
+    <Copy SourceFiles="@(MetadataFiles)" DestinationFolder="$(OutputPath)..\metadata" />
   </Target>
 
   <Target Name="PluginClean" AfterTargets="CoreClean">
     <Delete Condition="$(OS) == 'Windows_NT'" Files="$(PluginDir)$(ProjectName).link" />
     <Exec Condition="$(OS) != 'Windows_NT'" Command="rm -f $(PluginDir)$(ProjectName).link" />
 
-    <RemoveDir Directories="$(OutputPath)metadata" />
+    <RemoveDir Directories="$(OutputPath)..\metadata" />
+    <RemoveDir Directories="$(OutputPath)" />
   </Target>
 
 </Project>
