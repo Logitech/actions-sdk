@@ -1,0 +1,15 @@
+displayName: Haptics Example
+description: Demonstrates each haptic waveform family via the Press Counter and Tick Counter actions
+events:
+    - name: buttonPress
+      displayName: Button Press
+      description: Fired every time the Press Counter button is pressed
+    - name: milestoneReached
+      displayName: Milestone Reached
+      description: Fired every 10th button press
+    - name: dialTick
+      displayName: Dial Tick
+      description: Fired every time the Tick Counter dial is rotated by one detent
+    - name: counterReset
+      displayName: Counter Reset
+      description: Fired when the Tick Counter is reset to zero
