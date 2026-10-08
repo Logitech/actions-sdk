@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Logi Plugin Service",
+      "type": "coreclr",
+      "request": "attach",
+      "windows": {
+        "processName": "LogiPluginService.exe"
+      },
+      "osx": {
+        "processName": "LogiPluginService"
+      },
+      "justMyCode": true
+    }
+  ]
+}

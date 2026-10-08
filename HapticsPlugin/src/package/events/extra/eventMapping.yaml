@@ -1,0 +1,17 @@
+haptics:
+    # State Change family: a single discrete action just occurred.
+    buttonPress:
+        DEFAULT: sharp_state_change
+        MX Master 4: sharp_collision
+
+    # Special family: reserved for rare, celebratory moments.
+    milestoneReached:
+        DEFAULT: jingle
+
+    # Collision family: gentle, repeatable feedback for a frequent action.
+    dialTick:
+        DEFAULT: subtle_collision
+
+    # Alert family: a task has finished.
+    counterReset:
+        DEFAULT: completed
